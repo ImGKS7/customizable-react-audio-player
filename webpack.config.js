@@ -25,5 +25,7 @@ use: ["style-loader", "css-loader"]
 ]
 },
 target: 'node',
-externals: [nodeExternals()]//<- if we need to bundle anything extra with our code, if nothing entered means nothing else to compile, else we can mention, if, in case we want to bundle a particular 3rd party code with our codebase
+externals: {
+    'react': 'React'
+}
 };
